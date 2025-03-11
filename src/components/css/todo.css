@@ -1,0 +1,122 @@
+/* Default Styling */
+.todo {
+    width: 500px;
+    min-height: 732px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 44px;
+    padding-bottom: 30px;
+}
+
+/* Adjust header to align better */
+.todo-header {
+    text-align: center;
+    color: #002675;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-top: 50px; /* Adjust margin-top for better positioning */
+}
+
+/* Add styles for add section */
+.todo-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.todo-input {
+    border-radius: 50px;
+    background-color: #edeef0;
+    border: none;
+    outline: none;
+    width: 576px;
+    height: 80px;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.todo-add-btn {
+    border-radius: 50px;
+    background-color: #ff6739;
+    color: #fff;
+    width: 187px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (portrait tablets and mobile phones) */
+@media (max-width: 768px) {
+    .todo {
+        width: 90%;
+        margin-top: 20px; /* Reduced margin-top for smaller screens */
+        padding: 0px 20px;
+    }
+
+    .todo-header {
+        font-size: 28px;
+        margin-top: 20px; /* More reasonable top margin */
+    }
+
+    .todo-add {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .todo-input {
+        width: 90%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .todo-add-btn {
+        margin-top: 1.3em;
+        width: 30%;
+        height: 60px;
+        margin-left: 0;
+        font-size: 22px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .todo {
+        width: 90%;
+        min-height: 600px;
+        margin-top: 20px; /* Adjusted top margin */
+        padding: 0px 10px;
+    }
+
+    .todo-header {
+        font-size: 24px;
+        margin-top: 15%; /* Adjust top margin for small screens */
+    }
+
+    .todo-add {
+        margin-top: 20px;
+    }
+
+    .todo-input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .todo-add-btn {
+        height: 50px;
+        font-size: 20px;
+    }
+
+}

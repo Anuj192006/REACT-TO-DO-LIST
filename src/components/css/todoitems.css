@@ -1,0 +1,90 @@
+/* Default Styling */
+.todoitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #edeef0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.todoitems-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.todoitems-tick {
+  margin-left: 12px;
+  flex-grow: 1;
+}
+
+.todoitems.completed .todoitems-tick {
+  text-decoration: line-through;
+  color: gray; /* Strikethrough text */
+}
+
+.todoitems-container h1 {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.todoitems-container h1:hover {
+  color: #4caf50;
+}
+
+.todoitems h1:last-child {
+  cursor: pointer;
+  font-size: 24px;
+  color: #e74c3c;
+  transition: color 0.2s ease;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.todoitems h1:last-child:hover {
+  color: #c0392b;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .todoitems {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  .todoitems-container h1 {
+    font-size: 22px;
+  }
+
+  .todoitems h1:last-child {
+    font-size: 22px;
+  }
+
+  .todoitems-tick {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todoitems {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .todoitems-container h1 {
+    font-size: 20px;
+  }
+
+  .todoitems h1:last-child {
+    font-size: 20px;
+  }
+
+  .todoitems-tick {
+    font-size: 14px;
+  }
+}
