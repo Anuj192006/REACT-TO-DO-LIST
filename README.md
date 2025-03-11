@@ -1,12 +1,25 @@
-# React + Vite
+this how my code functions for each operation user performs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add Task:
+  ├── User clicks "Add" button.
+  ├── add() function is called.
+  │   ├── Check if input is not empty.
+  │   ├── If not empty:
+  │   │   ├── Add new to-do to state.
+  │   │   └── Clear input field.
+  └── Component re-renders with the new to-do.
 
-Currently, two official plugins are available:
+Toggle Completion:
+  ├── User clicks checkbox icon.
+  ├── toggleComplete() function is called.
+  │   ├── Create a copy of todos list.
+  │   ├── Toggle completion state.
+  │   └── Update state with new todos list.
+  └── Component re-renders with the updated completion state.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Delete Task:
+  ├── User clicks delete icon.
+  ├── deleteTodo() function is called.
+  │   ├── Remove to-do from todos using filter().
+  │   └── Update state with the filtered todos list.
+  └── Component re-renders with the remaining to-dos.
